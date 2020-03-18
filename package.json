@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "jest": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,7 +45,8 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
     "eslint": "^6.8.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "prettier": "1.19.1"
   },
   "jest": {
     "snapshotSerializers": [
