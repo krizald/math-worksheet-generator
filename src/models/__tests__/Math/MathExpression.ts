@@ -1,6 +1,4 @@
-import MathValue from '../MathValue';
-import MathExpression from '../MathExpression';
-import Addition from '../Addition';
+import { Addition, MathValue, MathExpression } from '../../Math';
 
 test('MathExpression: GetValue', () => {
   const sut = new MathExpression(new MathValue(2), new MathValue(5), new Addition());

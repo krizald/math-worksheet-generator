@@ -1,5 +1,4 @@
-import Addition from '../Addition';
-import MathValue from '../MathValue';
+import { Addition, MathValue } from '../../Math';
 
 test('Addition: GetResult', () => {
   const add = new Addition();

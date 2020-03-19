@@ -1,4 +1,4 @@
-import MathValue from '../MathValue';
+import { MathValue } from '../../Math';
 
 test('MathValue: GetValue', () => {
   const sut = new MathValue(5);
