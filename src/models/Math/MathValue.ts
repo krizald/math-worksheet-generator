@@ -1,4 +1,4 @@
-import { IExpression } from './IExpression';
+import IExpression from './IExpression';
 
 export default class MathValue implements IExpression {
   private Value: number;

@@ -1,5 +1,5 @@
-import { IPrintable } from './IPrintable';
+import IPrintable from './IPrintable';
 
-export interface IExpression extends IPrintable {
+export default interface IExpression extends IPrintable {
   GetValue(): number;
 }

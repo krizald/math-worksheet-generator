@@ -1,6 +1,6 @@
-import { IExpression } from './IExpression';
-import { IPrintable } from './IPrintable';
+import IExpression from './IExpression';
+import IPrintable from './IPrintable';
 
-export interface IOperator extends IPrintable {
+export default interface IOperator extends IPrintable {
   GetResult(left: IExpression, right: IExpression): number;
 }
