@@ -32,7 +32,9 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "implicit-arrow-linebreak": "off",
+    "no-unused-vars": "warn"
   },
   "settings": {
     "import/resolver": {

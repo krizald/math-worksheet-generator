@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import { IExpression } from './IExpression';
 
 export default class MathValue implements IExpression {

@@ -1,6 +1,4 @@
-// eslint-disable-next-line no-unused-vars
 import { IExpression } from './IExpression';
-// eslint-disable-next-line no-unused-vars
 import { IOperator } from './IOperator';
 
 export default class MathExpression implements IExpression {
