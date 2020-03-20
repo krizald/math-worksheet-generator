@@ -1,7 +1,11 @@
 /* eslint-disable linebreak-style */
 module.exports = {
   roots: ['<rootDir>/src'],
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx,ts,tsx}',
+    '!src/**/*.d.ts',
+    '!src/**/index.js',
+  ],
   setupFiles: ['react-app-polyfill/jsdom'],
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   testMatch: [

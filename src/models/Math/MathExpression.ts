@@ -1,5 +1,4 @@
-import IExpression from './IExpression';
-import IOperator from './IOperator';
+import { IExpression, IOperator } from '.';
 
 export default class MathExpression implements IExpression {
   private Left: IExpression;

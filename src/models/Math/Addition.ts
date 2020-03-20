@@ -1,5 +1,4 @@
-import IOperator from './IOperator';
-import IExpression from './IExpression';
+import { IOperator, IExpression } from '.';
 
 export default class Addition implements IOperator {
   Print = (): string => '+';

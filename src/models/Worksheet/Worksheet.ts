@@ -1,6 +1,5 @@
-import { Question } from '.';
+import { Question, QuestionType } from '.';
 import { MathExpression, MathValue, Addition } from '../Math';
-import QuestionType from './QuestionType';
 
 export default class Worksheet {
   private NumberOfQuestions: number;

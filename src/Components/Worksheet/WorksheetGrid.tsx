@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
-import { IWorksheetGridProp } from './IWorksheetGridProp';
+import IWorksheetGridProp from './IWorksheetGridProp';
 import { Worksheet } from '../../Models/Worksheet';
 
 const WorksheetGrid = (prop: IWorksheetGridProp) => {

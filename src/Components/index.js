@@ -1,2 +1,5 @@
-export { default as WorksheetGrid } from './WorksheetGrid/WorksheetGrid';
-export { default as IWorksheetGridProp } from './WorksheetGrid/IWorksheetGridProp';
+export { default as WorksheetGrid } from './Worksheet/WorksheetGrid';
+export { default as WorksheetPaper } from './Worksheet/WorksheetPaper';
+export { default as IWorksheetGridProp } from './Worksheet/IWorksheetGridProp';
+export { default as IWorksheetPaperProp } from './Worksheet/IWorksheetPaperProp';
+export { default as Header } from './Header/Header';
