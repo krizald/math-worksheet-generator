@@ -5,6 +5,7 @@ module.exports = {
     'src/**/*.{js,jsx,ts,tsx}',
     '!src/**/*.d.ts',
     '!src/**/index.js',
+    '!src/**/I*.ts',
   ],
   setupFiles: ['react-app-polyfill/jsdom'],
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
