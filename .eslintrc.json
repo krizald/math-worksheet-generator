@@ -4,8 +4,8 @@
     "es6": true,
     "jest": true
   },
-  "plugins": ["react", "@typescript-eslint", "jest", "prettier"],
-  "extends": ["plugin:react/recommended", "plugin:jest/recommended", "airbnb"],
+  "plugins": ["react", "@typescript-eslint", "jest"],
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:jest/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -36,9 +36,9 @@
     "implicit-arrow-linebreak": "off",
     "no-unused-vars": ["error", { "varsIgnorePattern": "I*" }],
     "linebreak-style": ["error", "windows"],
-    "function-paren-newline": "warn",
     "semi": "off",
-    "@typescript-eslint/semi": ["error"]
+    "@typescript-eslint/semi": ["error"],
+    "function-paren-newline": "off"
   },
   "settings": {
     "import/resolver": {
