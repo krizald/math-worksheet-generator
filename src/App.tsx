@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { Header, WorksheetPaper, ControlPannel } from './Components';
+import { QuestionType } from './Models/Worksheet';
+import IWorsheetPaperProp from './Components/Worksheet/IWorksheetPaperProp';
 
 function App() {
+  const [numOfColumns, setNumOfColumns] = useState(5);
+  const [numOfQuestions, setNumOfQuestions] = useState(40);
+
+  const HandleGenerateClicked = (event: IWorsheetPaperProp) => {
+    setNumOfColumns(event.NumberOfColumns);
+    setNumOfQuestions(event.NumberOfQuestions);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>src/App.tsx</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <ControlPannel GenerateClicked={HandleGenerateClicked} />
+      <WorksheetPaper
+        NumberOfColumns={numOfColumns}
+        QuestionType={QuestionType.Addition}
+        NumberOfQuestions={numOfQuestions}
+      />
     </div>
   );
 }
