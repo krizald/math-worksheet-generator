@@ -1,5 +1,5 @@
 import { Question, QuestionType } from '.';
-import { MathExpression, MathValue, Addition } from '../Math';
+import { MathExpression, MathValue, Addition, Substraction } from '../Math';
 
 export default class Worksheet {
   private NumberOfQuestions: number;
@@ -12,6 +12,10 @@ export default class Worksheet {
     switch (qestionType) {
       case QuestionType.Addition: {
         this.GenerateAdditions();
+        break;
+      }
+      case QuestionType.Substraction: {
+        this.GenerateSubstraction();
         break;
       }
       default: {
@@ -32,6 +36,20 @@ export default class Worksheet {
             new MathValue(this.GetRandomInt(10)),
             new MathValue(this.GetRandomInt(10)),
             new Addition(),
+          ),
+        ),
+      );
+    }
+  }
+
+  private GenerateSubstraction() {
+    for (let i = 0; i < this.NumberOfQuestions; i += 1) {
+      this.Questions.push(
+        new Question(
+          new MathExpression(
+            new MathValue(this.GetRandomInt(10)),
+            new MathValue(this.GetRandomInt(10)),
+            new Substraction(),
           ),
         ),
       );

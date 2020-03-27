@@ -5,3 +5,5 @@ export { default as IWorksheetPaperProp } from './Worksheet/IWorksheetPaperProp'
 export { default as IControlPanelProp } from './ControlPanel/IControlPanelProp';
 export { default as Header } from './Header/Header';
 export { default as ControlPannel } from './ControlPanel/ControlPanel';
+export { default as QuestionRouter } from './Header/QuestionRouter';
+export { default as IQuestionRouter } from './Header/IQuestionRouterProp';
